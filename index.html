@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Заголовок изменен на "Document" -->
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="fonts.googleapis.com" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        roboto: ['Roboto', 'sans-serif'],
+                    },
+                    colors: {
+                        'gray-text': '#A6A8AD',
+                        'brand-blue': '#0033FF',
+                        'bg-dark': '#121214',
+                    },
+                    backgroundImage: {
+                        'hero-image': "url('./IMAGE (1).png')",
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-bg-dark font-roboto text-white antialiased">
+
+    <header class="flex items-center justify-between px-5 pt-5 max-w-[1440px] mx-auto">
+        <nav class="flex items-center gap-[30px]">
+            <img src="./IMAGE.svg" alt="" class="h-6">
+            <div class="hidden lg:flex gap-5">
+                <a href="" class="text-gray-text text-[16px] leading-5 hover:text-white transition">Sounds</a>
+                <a href="" class="text-gray-text text-[16px] leading-5 hover:text-white transition">Skills</a>
+                <a href="" class="text-gray-text text-[16px] leading-5 hover:text-white transition">Plugins</a>
+                <a href="" class="text-gray-text text-[16px] leading-5 hover:text-white transition">Studio</a>
+                <a href="" class="text-gray-text text-[16px] leading-5 hover:text-white transition">Community</a>
+                <a href="" class="text-gray-text text-[16px] leading-5 hover:text-white transition">Blog</a>
+                <a href="" class="text-gray-text text-[16px] leading-5 hover:text-white transition">Pricing</a>
+            </div>
+        </nav>
+        <button class="bg-white text-black w-[125px] h-[50px] rounded-[32px] font-medium transition hover:bg-gray-200">
+            Sign up
+        </button>
+    </header>
+
+    <main>
+        <section class="w-full h-[744px] mt-10 bg-hero-image bg-cover bg-no-repeat bg-center px-[50px] pt-[190px]">
+            <div class="max-w-[1440px] mx-auto">
+                <h1 class="text-[72px] leading-[72px] tracking-[1.08px] font-normal">
+                    Step into the <br> producer’s <br> playground
+                </h1>
+                <p class="mt-[30px] w-[412px] text-[20px] leading-6 font-normal">
+                    Explore the world’s best sample library and an unmatched marketplace of plugins and DAWs.
+                </p>
+                <button class="mt-[50px] bg-brand-blue w-[125px] h-[56px] rounded-lg font-medium transition hover:brightness-110">
+                    Try free
+                </button>
+            </div>
+        </section>
+
+        <section class="mt-[80px] max-w-[1440px] mx-auto px-[50px] pb-20">
+            <h2 class="text-center text-xl uppercase tracking-widest mb-10">About Catalog</h2>
+            
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-10">
+                <div class="max-w-[450px]">
+                    <h3 class="text-[28px] leading-[36px] font-normal">A catalog so deep, it’s dangerous.</h3>
+                    <p class="mt-[15px] text-[16px] leading-6 text-gray-text font-normal">
+                        Expertly created and curated samples in any style imaginable. Start swimming in sound.
+                    </p>
+                    <button class="mt-5 bg-brand-blue w-[159px] h-9 rounded-lg text-[16px] transition hover:brightness-110">
+                        Explore Sounds
+                    </button>
+                </div>
+
+                <div class="flex-shrink-0">
+                    <img src="./IMAGE (2).png" alt="" class="rounded-lg max-w-full h-auto">
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
